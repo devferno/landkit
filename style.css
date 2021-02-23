@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+  height: 300vh;
+}
+/*navbar////////////////////*/
+.Navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+  height: 60px;
+}
+nav .brand-name {
+  color: #335eea;
+  font-weight: bold;
+  font-size: 22px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  list-style: none;
+  padding: 8px 18px;
+  margin: 0px 2px;
+}
+a,
+a:hover {
+  color: #506690;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 18px;
+  margin: 0px 2px;
+}
+nav .buy-btn {
+  border: transparent;
+  border-radius: 5px;
+  background-color: #335eea;
+  transition: all 0.4s ease-in-out;
+}
+nav .buy-btn a,
+nav .buy-btn a:hover {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+nav .buy-btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 1px 5px 20px rgb(187, 187, 187);
+}
+nav ul .account .account-dropdown {
+  display: none;
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+  border-radius: 8px;
+  padding: 10px;
+}
+nav ul .account .account-dropdown a {
+  font-size: 15px;
+}
+nav ul li img {
+  width: 20px;
+  height: auto;
+}
+.account:hover .account-dropdown {
+  display: block;
+  box-shadow: 0px 0px 20px rgb(226, 226, 226);
+  top: 50px;
+}
+.account a:hover {
+  color: #335eea;
+}
+/* setting dropdown*/
+.setting .setting-dropdown {
+  display: none;
+  z-index: 4;
+  position: absolute;
+}
+.setting-dropdown li a {
+  display: inline-block;
+}
+.setting:hover .setting-dropdown {
+  display: block;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 0px 8px #ddd;
+  left: 70%;
+  top: 10%;
+}
+
+/*////////landing ///////////////*/
+.landing {
+  padding: 40px 0;
+  margin: 50px 0;
+}
+.landing .introduction {
+  align-self: center;
+}
+.landing .introduction p {
+  margin: 20px 0;
+  color: grey;
+  line-height: 1.8;
+}
+.landing .introduction .btn-section {
+  display: inline-block;
+}
+.landing .introduction .btn-section button {
+  border: none;
+  background-color: #335eea;
+  box-shadow: 0px 0px 10px #d2dcff;
+  border-radius: 6px;
+  padding: 12px 20px;
+  outline: none;
+  color: white;
+  margin: 10px 0;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.landing .introduction .btn-section button:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 0px 8px rgb(199, 199, 199);
+}
+.landing .introduction .btn-section .right-btn {
+  color: #335eea;
+  background-color: #d2dcff;
+  box-shadow: 0px 0px 0px white;
+}
+.landing .introduction-image {
+  align-self: center;
+}
+
+/*//////styling features///////////*/
+.features .col-md img {
+  width: 45px;
+}
+.features .col-md h3 {
+  margin: 18px 0;
+  font-weight: 400;
+}
+.company {
+  margin-top: 70px;
+  border-bottom: solid 1px rgb(212, 212, 212);
+  border-top: solid 1px rgb(212, 212, 212);
+  padding: 50px 0px;
+}
+.row {
+  padding: 0;
+  margin: 0;
+}
+.company img {
+  width: auto;
+  max-width: 150px;
+  padding: 10px;
+}
+
+/*/////styling the sample form/////*/
+/*//////////////////////////*/
+.sample-form {
+  background-color: #fafcfe;
+  padding: 20px 0;
+}
+.form-part {
+  margin: 0 auto !important;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  transition: ease-in-out all 0.4s !important;
+  -webkit-transition: ease-in-out all 2s ease-out !important;
+  box-shadow: 1px 1px 30px #ddd;
+}
+.col-md {
+  padding: 0;
+  margin: 0;
+}
+.form-part:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 1px 80px rgb(209, 209, 209);
+}
+.form-part img {
+  width: 100%;
+  height: auto;
+}
+.form-part form {
+  margin: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px 30px;
+}
+.form-part button {
+  border: 1px solid transparent;
+  background: #42ba96;
+  border-radius: 6px;
+  margin: 12px 0;
+  padding: 12px 20px;
+  width: 100%;
+  color: white;
+}
+.form-part input {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px rgb(233, 233, 233);
+  margin: 15px 0;
+  width: 100%;
+}
+.benefits-part {
+  margin: 20px 0;
+  align-self: center;
+}
+.benefits-part p {
+  line-height: 1.7;
+}
+.benefits-part h2 {
+  display: inline-block;
+  font-size: calc(25px + 0.4vw);
+  font-weight: 400;
+  margin: 15px 0px;
+}
+.benefits-part span {
+  color: #42ba96;
+}
+.benefits {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+.benefits p {
+  color: #42ba96;
+}
+/*///slides ////////*/
+.slides {
+  background-color: #d2dcff;
+  max-width: 100%;
+}
+.slides img {
+  width: 500px;
+  clip-path: circle(92.2% at 8% 49%);
+}
+.slide {
+  display: none;
+}
+.active {
+  display: block;
+  animation: fade 0.6s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cars {
+  position: relative;
+}
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  clip-path: circle(40% at 50% 50%);
+  padding: 10px !important;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  outline: none !important ;
+  border: transparent;
+  background-color: #335eea;
+}
+.next-btn {
+  right: 0%;
+}
+.prev-btn {
+  left: 0%;
+}
